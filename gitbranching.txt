@@ -57,3 +57,13 @@ ORDER OF COMMANDS:
 nano file, git status (showed changes had not been moved to staging area), git commit (no changes added because nothing had been moved to staging area),
 git add -A (moved changes to staging area), git status (showed the changes were made, not yet committed), 
 git commit -m "message" (recorded the changes made and added to staging area to the actual milestone checkpoint made via the commit command)
+
+MERGING BRANCHES:
+If you are in one branch, where you have progressed with your project, and the other branches do not have the same up to date information, you can merge the branches, exchange information so that the two branches contain the same up to date information through git merge branchname
+for this merge command to work, you must be inside the branch that you want to update. for example, if I want to place versions of files from master branch to a different branch, oldbranch, then i would switch to the oldbranch and then enter 'git merge master' and it will replace my current branches contents with the versions from the master branch.
+NOTE**** this only works if two branches being merged do not have conflicts with versions of a file. If in master branch: file1 was changed so that the last line was "Today I will eat until i physically am incapable of eating more" 
+Meanwhile, in oldbranch: file1 was changed so that the last line is "I will noever touch food again"
+If you add the file to staging area with the respective changes, and commit the changes, and then try to merge the branches, you will receive an error message due to the files being in conflict. 
+The Error message will say where the conflict occurred (in which file/files). Using git status, you will also be able to review the conflict.
+To resolve this issue, you can either go into each branch and edit the files with conflicts so that they are no longer in conflict, or you can unmerge with: 'git merge --abort'
+Attempt at creating a branch, adding changes, committing changes and then merging changes to master branch. 

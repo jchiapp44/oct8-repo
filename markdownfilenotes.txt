@@ -1,0 +1,30 @@
+#Markdown files
+Basically text files that have extension: .md in order for the file to be presented as a decorative file, typically used for webpage creation, via HTML 
+The most popular markup language is HTML
+Git hub will transform .md files into simple HTML webpages in your repository, so if you want a more decorative file, switch extension to .md and take into account the partiuclar rules of that language
+
+Pound signs (#, ##) make headings. There are several potential levels od headers, the number of "#" symbols correspond to the level of the header.
+
+A word surrounded by single asterisks (*word*) makes that word italicized. You could also use "_" on both sides too for italics. ex: _this text_ would become italicized.
+
+A word surrounded by double asterisks (**word**) makes that word bold. Same principle as bove, but converts anythign inside symbols to bold print. 
+
+A word surrounded by triple asterisks (***word***) makes the word both italicized and bold. Combines the two elements from above.
+
+You can create lists with hyphens (-) or numbers (1., 2., 3.).
+
+Code can be placed in the middle of a line with single backticks (`code`).
+
+A code block can be created by putting code in between a set of triple backticks (```).
+
+You can insert a link with brackets and parentheses ([Link text here](http://jhu.edu)).
+
+You can use an image with an exclamation point, and a link to an image (![Alt text here](http://jhu.edu/jeff.jpg))
+
+
+In order to make changes across repositories, first you must modify one branch at a time. For example, let's say i am working in master branch of local repository. I will make my modifications, add them to staging area, then commit those changes to the repo fo rthat particular branch. If i want to spread those changes to other rbancches, then i would use a series of commands like: git branch, git checkout otherbranch, git merge previousbranch. 
+Otherwise, if i wanted just the master branch, current branch, to have said modifications, then i could skip the previous step and direct my attention towards getting said changes on the remote repository. 
+Once the remote repo is linked to the local repo, all you need to do is enter git push remoterepositoryname branchinrepo
+example: git push my-first-repo master -> will insert my current versions of files form local repository to that particular branch in the remote repository. 
+CLARIFICATION: the branch specified in the git push command is actually indicating: push material from this local repo branch to the remote repository, where a branch with the same name will be created (if it does not yet exist) and the material will be inserted in that branch. So if you had a branch named oldbranch in local repo, and every time you used git push from local repo to remote repository you only specified master branch or newbranch1, then the oldbranch would not yet exist in the remote repo. 
+

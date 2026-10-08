@@ -3,3 +3,35 @@ Author: jchiapp44 <julian.chiapperino@gmail.com>
 Date:   Fri Oct 2 23:44:17 2026 +0200
 
     ignore particular content
+
+NEW EDITS THROUGH REMOTE REPO:
+Sun Oct  4 17:04:33 CEST 2026
+git log
+julianchiapperino@Julians-MacBook-Air Module4 % git log
+commit 13334b0b4a9567260955de4824bd968111a903d3 (HEAD -> master, my-first-repo/master)
+Author: jchiapp44 <julian.chiapperino@gmail.com>
+Date:   Sun Oct 4 17:01:27 2026 +0200
+
+    Updates to markdown notes
+
+commit e973362eed4933929f09137c00ce3aaa72a0a3b4 (my-first-repo/newbranch1, newbranch1)
+Author: jchiapp44 <julian.chiapperino@gmail.com>
+Date:   Sun Oct 4 16:48:10 2026 +0200
+
+    Additional instruction for attempt 1 of markdown file
+
+commit 60afd311564489993f6ce163d4a75bd2353e0883
+Author: jchiapp44 <julian.chiapperino@gmail.com>
+Date:   Sun Oct 4 16:43:55 2026 +0200
+
+    markdown file attempt
+
+commit 80131625dbbd9bb358d98ac0d9d769f3fb3e06be
+Author: jchiapp44 <julian.chiapperino@gmail.com>
+Date:   Sun Oct 4 16:34:18 2026 +0200
+
+    Updates to markdownnotes and githubnotes
+The above information was displayed when i entered 'git log' in the command line. 
+The log reveals changes made to the repository, and recent activity.
+In fact, it reveals commit history for that particular branch in the repository.
+I am modifying this file through git hub website, remote repo, and i will be working on executing git pull to get said changes back into my local repo to update my master branch in the local repository.

@@ -1,0 +1,45 @@
+TESTING branch commands
+Created this file, while in newbranch1, then i will add the file to staging area, i will commit the changes, and then i will try to merge the changes to the master branch. 
+Below was the prompt from coursera: 
+Start a new branch.
+
+Switch to that branch and add commits to it. Switch to an older branch and then merge the new branch into your current branch.
+
+Purposefully create and resolve a merge conflict.
+<<<<<<< HEAD
+<<<<<<< HEAD
+Different last line, the master branch has a different ending compared to the newbranch1 (current branch) version of this file. i will add the changes of this file, commit them, and then$
+=======
+
+Now i am currently in the master branch, merge was successful. This time i will add and commit this file to the master branch with this file having this current line only in the master b$
+=======
+Different last line, the master branch has a different ending compared to the newbranch1 (current branch) version of this file. i will add the changes of this file, commit them, and then try to merge the two branches.
+=======
+
+Now i am currently in the master branch, merge was successful. This time i will add and commit this file to the master branch with this file having this current line only in the master branch, i will add a different line to the file in newbranch1.
+>>>>>>> newbranch1
+>>>>>>> master
+julianchiapperino@Julians-MacBook-Air Module4 % git merge master
+Auto-merging newfile.branchingtest.txt
+CONFLICT (content): Merge conflict in newfile.branchingtest.txt
+Automatic merge failed; fix conflicts and then commit the result.
+Above you can find the Error message that was displayed for me when the merge failed.
+<<<<<<< HEAD
+$anch so that the two versions of the file are identical.
+
+=======
+To resolve the conflict i could unmerge, instead i will copy and paste this entire block, directly under the line starting with "purposefully", in the same file but in the master branch so that the two versions of the file are identical.
+>>>>>>> newbranch1
+
+
+Ultimately, i had success iwth git branching and resolving coflicts, with the following ultimately being printed: 
+julianchiapperino@Julians-MacBook-Air Module4 % git branch
+  master
+* newbranch1
+  oldbranch
+julianchiapperino@Julians-MacBook-Air Module4 % git checkout master
+M	my-first-repository
+Switched to branch 'master'
+julianchiapperino@Julians-MacBook-Air Module4 % git merge newbranch1
+Already up to date.
+series of commands that switched branch, and attempted to merge after having already corrected errors leading to conflicts.
