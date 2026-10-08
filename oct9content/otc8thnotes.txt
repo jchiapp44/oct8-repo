@@ -1,0 +1,22 @@
+NOTES FROM CLASS WITH SENAR ABOUT GITHUB:
+We ar etalking about merging material across branches. 'git merge branchname' allows for pushing material from one branch to another. The branch you are currently in,
+is the one you wish to update, entering 'git merge branchname' will pull information across both branches. 
+Ultimately, Git decides how to merge material, and this is what leads to conflicts.
+When both branches ahve distinct yet simultaneous changes to particular files that were added and committed, the git software is unsure which one to prioritize, therefore it presents you with an error.
+
+**Remember** you must add modifications to staging area, and commit them to the repository. Think of branches as pointers to particular versions of repository, you can have multiple pointers (branches) pointing towards the same version, but if only 1 branch has that particular development, then it's worth noting caution when considering removing said branch.
+
+'git merge --abort' will cancel the merge attempt if there was a conflict.
+The merge will be pending otherwise. 
+Traditional fast-forward merge
+
+3-way merge: Git will use recursive strategy to solve it automatically using two snapshots pointed by the branch tips and the common ancestor of the two.
+Usually what leads to conflicts in merging.
+Either way, when there is conflict, manual intervention is required and it can be navigated in several ways.
+1) change the name of the conflicting files in just 1 branch, ensure other rbanch does not have a file with the same name
+2) change both versions of the file/files in their respective branches so that they reflect the same content, contain the same information
+3)abort the merge attempt.
+
+for the first two options, start them with git status to check which files exhibit the said conlfict.
+edit fix those changes, add them to staging area, commit them to repository in conjunction with paused merge
+git merge --continue after having added changes to staging area. 
